@@ -1,116 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="HiddenTrail — маршрут, который нельзя купить в турагентстве">
-  <meta property="og:description" content="Реальный маршрут по Юго-Восточной Азии, восстановленный из дневников. Видео. Фото. Группа. PDF-гайд скоро.">
-  <meta property="og:image" content="https://puziryov.com/img/ht-cover.jpg">
-  <title>HiddenTrail</title>
-  <!-- Facebook Pixel Code -->
-  <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1362658858277967'); 
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1362658858277967&ev=PageView&noscript=1"/></noscript>
-  <!-- End Facebook Pixel Code -->
-  <style>
-    body {
-      font-family: sans-serif;
-      background: #fff;
-      margin: 0;
-      padding: 2rem;
-      max-width: 600px;
-      margin: auto;
-      color: #111;
-    }
-    h1 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-    p {
-      margin-bottom: 1rem;
-      line-height: 1.6;
-    }
-    blockquote {
-      font-style: italic;
-      color: #444;
-      border-left: 3px solid #ccc;
-      padding-left: 1rem;
-      margin: 1rem 0;
-    }
-    a.button {
-      display: inline-block;
-      padding: 0.8rem 1.2rem;
-      background: #0066cc;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      margin: 1rem 0;
-    }
-    .lang-toggle {
-      margin-top: 2rem;
-      font-size: 0.9rem;
-    }
-    .lang-toggle a {
-      margin-right: 1rem;
-      color: #0066cc;
-      text-decoration: none;
-    }
-    .lang-toggle a.active {
-      font-weight: bold;
-    }
-  </style>
+
+<meta charset="UTF-8">
+<title>HiddenTrail</title>
+
+<script src="/assets/js/detect-lang.js"></script>
+
 </head>
 <body>
-  <div id="lang-ru">
-    <h1>HiddenTrail — маршрут, который нельзя купить в турагентстве</h1>
-    <p>Вьетнам. Лаос. Дороги без названий, мосты без указателей и кадры, которые невозможно повторить.</p>
-    <p>Это не экскурсия и не блог. Это реальный маршрут по Юго-Восточной Азии, восстановленный по старым дневникам. Постепенно. По следу. Без фильтров.</p>
-    <blockquote>Никогда не экономь на том, что не сможешь повторить.</blockquote>
-    <p>🎥 Смотри короткие видео по точкам маршрута<br>
-    📘 Вступай в открытую группу<br>
-    📕 PDF-гайд — скоро</p>
-    <a class="button" href="https://www.facebook.com/groups/hiddentrail" target="_blank" onclick="fbq('trackCustom', 'Click_FB_GROUP_HT'); fbq('track', 'Subscribe');">Вступить в группу</a>
-  </div>
 
-  <div id="lang-en" style="display: none;">
-    <h1>HiddenTrail — the route you can't buy from a travel agency</h1>
-    <p>Vietnam. Laos. Roads without names, bridges without signs, and moments you can never repeat.</p>
-    <p>This is not a tour. Not a blog. It's a real Southeast Asia route rebuilt from old diaries. Step by step. No filters.</p>
-    <blockquote>Never save money on what you can’t repeat.</blockquote>
-    <p>🎥 Watch short videos from each stop<br>
-    📘 Join the open group<br>
-    📕 PDF guide — coming soon</p>
-    <a class="button" href="https://www.facebook.com/groups/hiddentrail" target="_blank" onclick="fbq('trackCustom', 'Click_FB_GROUP_HT'); fbq('track', 'Subscribe');">Join the group</a>
-  </div>
+Redirecting...
 
-  <div class="lang-toggle">
-    <a href="#" class="active" onclick="toggleLang('ru'); return false;">Русский</a>
-    <a href="#" onclick="toggleLang('en'); return false;">English</a>
-  </div>
-
-  <script>
-    setTimeout(function() {
-      fbq('trackCustom', 'ViewContent_ht_7s');
-    }, 7000);
-
-    function toggleLang(lang) {
-      document.getElementById('lang-ru').style.display = (lang === 'ru') ? 'block' : 'none';
-      document.getElementById('lang-en').style.display = (lang === 'en') ? 'block' : 'none';
-      const links = document.querySelectorAll('.lang-toggle a');
-      links.forEach(link => link.classList.remove('active'));
-      document.querySelector(`.lang-toggle a[onclick*="${lang}"]`).classList.add('active');
-    }
-  </script>
 </body>
 </html>
